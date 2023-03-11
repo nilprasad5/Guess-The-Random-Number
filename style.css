@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --dark:#350363;
+    --background:#ffe9db;
+
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    background-color: #491579;
+}
+
+main{
+    width: 30vw;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+    border: solid var(--dark);
+    border-width:.2rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+
+
+}
+h2{
+    font-size: 2.2rem;
+    margin: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+h3{
+    font-size: 2rem;
+
+}
+p{
+    font-size: 20px;
+}
+
+.image{
+    width: 100%;
+    /* max-height: 22rem; */
+    height: auto;
+    /* margin: 0 0 1rem 0; */
+}
+
+.button-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+}
+
+button{
+    min-width: 20rem;
+    background-image: linear-gradient(
+        92.88deg,
+        #455eb5 6.16%,
+        #5643cc 43.89%,
+        #673fd7 64.72%
+    );
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: rgba(0,0,0,0.25) 0 3px 8px;
+    transition: all 0.5s;
+    user-select: none;
+    -webkit-user-select: none;
+    text-transform: capitalize;
+    font-family: "josefin Sans" sans-serif;
+}
+button:hover{
+    box-shadow: rgba(80, 63, 205, 0.2) 0 1px 30px;
+    transition-duration: 0.1s;
+}
+
+button:last-child{
+    background: var(--dark);
+
+}
+
+
+/* ...........................   Our game area............................... */
+
+#gameArea{
+    height: 42vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.newGameButton{
+    margin: 10px 0;
+
+}
+
+input{
+    border: 1px solid lightgray;
+    background: transparent;
+    margin: 20px 0;
+    padding: 10px 0;
+    width: 20rem;
+    text-align: center;
+
+}
+.stats{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info span{
+    font-size: 20px;
+    color: red;
+}
+
+@media(max-width: 1200px){
+    body{
+        width: 100vh;
+    }
+    main{
+        width: 50vh;
+        padding: 2rem;
+    }
+    input{
+        width: 20rem;
+    }
+
+}
+
+@media(max-width: 786px){
+    body{
+        width: 90%;
+        height: 100vh;
+        padding-bottom: 80px;
+    }
+    main{
+        width: 50vh;
+        
+        padding: 1rem;
+    }
+    input{
+        width: 20rem;
+    }
+    #gameArea{
+        height: 50vh;
+    }
+    .info span{
+        font-size: 15px;
+        color: red;
+    }
+
+}
+
